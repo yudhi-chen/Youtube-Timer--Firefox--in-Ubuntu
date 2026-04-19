@@ -87,7 +87,7 @@ Make executable:
 ```
 
 ## CREATE LAUNCHER SCRIPTS (STABILITY LAYER)
-YouTube launcher
+**YouTube launcher**
 ```bash
   nano ~/apps/youtube-timer/launch_youtube_timer.sh
 ```
@@ -98,7 +98,7 @@ Paste:
   cd "$HOME/apps/youtube-timer"
   python3 "$HOME/apps/youtube-timer/YouTubeTimerFirefox.py" youtube
 ```
-YouTube Kids launcher
+**YouTube Kids launcher**
 ```bash
   nano ~/apps/youtube-timer/launch_youtubekids_timer.sh
 ```
