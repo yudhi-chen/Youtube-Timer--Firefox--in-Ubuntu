@@ -17,40 +17,15 @@ This project is designed as a controlled access system:<br>
 - Child watches within the allowed time<br>
 - Session automatically ends after timer expires<br>
 
-## 🛠️ **Requirements**<br>
-Make sure the following are installed:<br>
-`sudo apt update`<br>
-`sudo apt install python3 python3-tk firefox`<br>
+## ▶️ **Requirements & How to Run**<br>
+Refer to the [Setup Guide](./SETUP_GUIDE.md) for full instructions.
 
 ## 📁 **Project Structure**<br>
-youtube-timer/<br>
-&nbsp;&nbsp;&nbsp;&nbsp;├── main.py      # Main application script<br>
-&nbsp;&nbsp;&nbsp;&nbsp;├── icons/       # App icons (YouTube / YouTube Kids)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;├── sounds/      # Optional click sound<br>
-&nbsp;&nbsp;&nbsp;&nbsp;└── README.md<br>
-
-## 🔧 **Setup Guide**<br>
-**1. Clone Repository**<br>
-`git clone https://github.com/YOUR_USERNAME/youtube-timer.git`<br>
-`cd youtube-timer`<br>
-
-**2. Create Firefox Profiles**<br>
-Run:<br>
-`firefox --ProfileManager`<br>
-Create:<br>
-youtube → for normal YouTube<br>
-youtube-kids → for kids content<br>
-(Optional: log in with separate Google accounts)<br>
-
-**3. Update Python Script**<br>
-Inside `main.py`, configure:<br>
-`YOUTUBE_URL = "https://www.youtube.com"`<br>
-`YOUTUBE_KIDS_URL = "https://www.youtube.com/kids"`<br>
-`FIREFOX_PROFILE_YT = "youtube"`<br>
-`FIREFOX_PROFILE_KIDS = "youtube-kids"`<br>
-
-## ▶️ **How to Run**<br>
-`python3 main.py`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~/apps/youtube-timer/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── YouTubeTimerFirefox.py<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── launch_youtube_timer.sh<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── launch_youtubekids_timer.sh<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── icons/<br>
 
 ## 🎮 **Usage**<br>
 - Launch the app<br>
