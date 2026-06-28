@@ -47,3 +47,25 @@ Developed as a personal project to support structured digital learning for child
 ## 🎥 Demo
 ▶️ Watch how the YouTube Timer works in action:  
 [Click here to view demo](2026-04-19-ubuntu_youtube_demo.mp4)
+
+## 💡 Blocking YouTube Ads
+This app does not include an ad blocker directly in the Python file.<br>
+The ad blocker is handled by Firefox, not by the Python script.<br>
+This keeps the Python file simple and avoids needing to modify the app code.<br>
+
+The timer app only launches Firefox using separate Firefox profiles:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*mainYT* for normal YouTube<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*kidsYT* for YouTube Kids<br>
+
+⚠️ To block ads, install *uBlock Origin* inside each Firefox profile.<br>
+
+**Setup**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Run YouTube mode first:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*python3 YouTubeTimerFirefox.py youtube*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;When Firefox opens, install *uBlock Origin* from Firefox Add-ons.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Then run Kids mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*python3 YouTubeTimerFirefox.py kids*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Install *uBlock Origin* again inside this profile.<br>
+
+After that, the timer app will continue working normally, but Firefox will open with ad blocking enabled.
